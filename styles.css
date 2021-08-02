@@ -1,0 +1,71 @@
+#heading {
+    text-align: center;
+    color: white;
+    font-size: 2em;
+}
+
+#form {
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+    border: 2px solid #356CB1;
+    padding: 1em;
+    border-radius: 8px;
+    background: gainsboro;
+    max-width: 600px;
+}
+
+#form input {
+    margin-bottom: 1em;
+    margin-top: 3px;
+    font-size: 0.7em;
+    border-radius: 5px;
+    padding: 8px 5px;
+}
+
+.submit {
+    font-size: 1.4rem;
+    margin: 1em auto 0;
+    padding: 5px 10px;
+    outline: none;
+    border: 3px solid #6c8db6;
+    background: #15314E;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.submit:hover {
+    transform: translateY(-3px);
+    background: #213e5e;
+}
+
+#thank-you {
+    opacity: 0;
+    transition: opacity 0.5s;
+    text-align: center;
+    color: white;
+}
+
+#form textarea {
+    height: 200px;
+    margin-bottom: 1em;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs'  preserveAspectRatio='none' viewBox='0 0 411 731'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1486%26quot%3b)' width='411' height='731' fill='none'%3e%3crect width='411' height='731' x='0' y='0' fill='url(%23SvgjsLinearGradient1487)'%3e%3c/rect%3e%3cpath d='M417.85 731L0 731 L0 553.32Q2.8 521.88%2c 34.25 524.68Q80.52 536.7%2c 68.5 582.98Q63.99 557.92%2c 89.05 553.4Q90.05 533.85%2c 109.6 534.85Q119.5 510.5%2c 143.85 520.4Q169.88 512.18%2c 178.1 538.21Q222.29 548.15%2c 212.35 592.35Q201.26 560.71%2c 232.89999999999998 549.62Q236.99 533.16%2c 253.45 537.25Q255.25 518.5%2c 274 520.3Q294.92 506.97%2c 308.25 527.9Q337.4 536.5%2c 328.8 565.66Q355.16 557.76%2c 363.05 584.12Q372.55 573.07%2c 383.6 582.57Q388.64 553.37%2c 417.85 558.41z' fill='%23182f5d'%3e%3c/path%3e%3cpath d='M417.8500000000001 731L0 731 L0 598.6Q5.36 569.71%2c 34.25 575.07Q68.32 588.59%2c 54.8 622.66Q80.77 614.38%2c 89.05 640.35Q90.25 607.3%2c 123.3 608.5Q135.05 586%2c 157.55 597.74Q157.86 577.5%2c 178.10000000000002 577.81Q224.18 589.64%2c 212.35000000000002 635.72Q210.55 599.67%2c 246.60000000000002 597.88Q244.54 575.27%2c 267.15000000000003 573.22Q295.67 581.19%2c 287.70000000000005 609.71Q311.64 613.11%2c 308.25000000000006 637.05Q306.67 601.22%2c 342.50000000000006 599.64Q344.35 580.94%2c 363.05000000000007 582.78Q389.11 588.29%2c 383.6000000000001 614.35Q407.7 604.2%2c 417.8500000000001 628.31z' fill='%2325467d'%3e%3c/path%3e%3cpath d='M424.70000000000005 731L0 731 L0 679.83Q-5.94 653.34%2c 20.549999999999997 647.4Q29.24 621.84%2c 54.8 630.53Q66.85 622.03%2c 75.35 634.09Q110.62 635.12%2c 109.6 670.39Q127.87 668.11%2c 130.14999999999998 686.38Q135.36 671.04%2c 150.7 676.26Q142.2 647.21%2c 171.25 638.71Q187.79 621%2c 205.5 637.55Q231.04 628.84%2c 239.75 654.38Q255.85 649.93%2c 260.3 666.03Q261.14 632.62%2c 294.55 633.46Q314.05 632.41%2c 315.1 651.91Q352.79 655.35%2c 349.35 693.04Q325.72 648.86%2c 369.90000000000003 625.23Q393.16 614.24%2c 404.15000000000003 637.5Q439.23 652.03%2c 424.70000000000005 687.11z' fill='%23356cb1'%3e%3c/path%3e%3cpath d='M431.55 731L0 731 L0 723.05Q-10.96 691.54%2c 20.549999999999997 680.59Q65.11 704.6%2c 41.099999999999994 749.16Q32.48 706.28%2c 75.35 697.66Q78.78 680.54%2c 95.89999999999999 683.97Q135.78 703.3%2c 116.44999999999999 743.18Q114.15 706.63%2c 150.7 704.32Q154.17 687.24%2c 171.25 690.71Q207 692.22%2c 205.5 727.97Q221.54 723.46%2c 226.05 739.5Q249.21 728.41%2c 260.3 751.58Q264.44 721.47%2c 294.55 725.6Q306.21 703.01%2c 328.8 714.67Q328.3 679.92%2c 363.05 679.42Q410.64 692.76%2c 397.3 740.35Q391.34 700.14%2c 431.55 694.19z' fill='white'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1486'%3e%3crect width='411' height='731' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='50%25' y1='0%25' x2='50%25' y2='100%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1487'%3e%3cstop stop-color='%230e2a47' offset='0'%3e%3c/stop%3e%3cstop stop-color='rgba(189%2c 214%2c 246%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3c/defs%3e%3c/svg%3e");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+}
+
+@media screen and (min-width: 700px) {
+    body {
+        background: #356CB1;
+    }
+}

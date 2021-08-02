@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Mobile Form Demo</title>
+</head>
+<body>
+    <div id="back-wrapper"></div>
+    <main>
+        <section>
+            <h1 id="heading">Form Demo</h1>
+            <form action="/" method="GET" id="form">
+                <label for="firstName">First Name</label>
+                <input type="text" name="firstName" id="firstName" placeholder="First Name" required/>
+
+                <label for="lastName">Last Name</label>
+                <input type="text" name="lastName" id="lastName" placeholder="Last Name" required/>
+
+                <label for="email">Email Address</label>
+                <input type="email" name="email" id="email" placeholder="Email Address" required/>
+
+                <label for="phone-number">Phone Number</label>
+                <input type="tel" name="phone-number" id="phone-number" placeholder="Phone Number" required/>
+
+                <label for="address">Physical Address</label>
+                <input type="address" name="address" id="address" placeholder="Physical Address" required/>
+
+                <label for="topShops">Favourite shops</label>
+                <textarea placeholder="Please type a comma between shops." id="topShops" oninput="test('shops')"></textarea>
+
+                <label for="topShops">Top 5 products you purchase every month</label>
+                <textarea placeholder="Please type a comma between products." id="topProds" oninput="test('products')"></textarea>
+
+                <button role="submit" class="submit">Submit</button>
+            </form>
+        </section>
+        <section>
+            <div id="thank-you">
+                <h2>Thank you for completing the form.</h2>
+                <button role="button" onclick="location.reload()" class="submit">Refresh</button>
+            </div>
+        </section>
+    </main>
+    <script src="formData.js"></script>
+</body>
+</html>
