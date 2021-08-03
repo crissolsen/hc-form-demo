@@ -24,5 +24,5 @@ form.addEventListener("submit", (e) => {
 function test() {
     favouriteShopsArr = topShops.value.split(",")
     
-    console.log(favouriteShopsArr)
+    // console.log(favouriteShopsArr)
 }
